@@ -2,96 +2,76 @@
 
 
 
-# [Project Name] 🎯
+# [kuru kuru] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Dashamulan damu: [Name]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Rithuraj P V] - [College of engneering trikaripur]
+- Member 2: [Athul krishana A ] - [College of engneering trikaripur]
 
 ### Project Description
-[2-3 lines about what your project does]
-
+its just a website were you click a button and a character from a game honkai star rail spin around with a funny scream.and also it has a webcam mode which roasts you for just existing
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+problem of self obsession
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
-
+this thing will roast you for too self obsessive ,and the other is just a simple satisfying sound.
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Language: Vanilla JavaScript (ES6), HTML5, CSS3 — no TypeScript.
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+Framework: None. No build step, no bundler (no React/Vue/etc.) — plain static site.
+- Libraries:
 
-### Implementation
-For Software:
-# Installation
-[commands]
+face-api.js (v0.22.2, via CDN) — TensorFlow.js-based face detection (TinyFaceDetector model)
+mdui (v1.0.2, via CDN) — Material Design UI component/styling library
 
-# Run
-[commands]
+- Browser APIs used directly (no library needed):
+
+getUserMedia — webcam access
+Canvas API — drawing face bounding boxes
+Audio / HTML5 audio playback
+localStorage — persisting the click counter
+
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
+[https://drive.google.com/drive/folders/1OVDLa27gHLUJOz8ypZWr2E7kA_cgOx_O?usp=drive_link]
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![## Architecture / Workflow
 
-For Hardware:
+```mermaid
+flowchart TD
+    A[Load kuru kuru page] --> B[Click kuru button]
+    A --> C[Click webcam button]
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+    B --> D["Play voice line<br/>(kuru2 weighted 3x)"]
+    D --> E[Animate spinning GIF]
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+    C --> F["Detect face<br/>(face-api.js, ~3x/sec)"]
+    F --> G["Play meme sound<br/>(random pick, every 3s)"]
+```
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+*The app has two independent workflows triggered from the same page. Clicking the kuru button plays a weighted-random Japanese voice line — "kuru2" ("kuru kuru") is 3x more likely to play than "kuru1" ("kururin") or "kuruto" — and animates the spinning GIF across the screen. Clicking the webcam button opens the camera and runs face-api.js's TinyFaceDetector in a loop (~3 scans/second); as soon as a face is detected, a random meme sound plays from a pool of three clips, repeating every 3 seconds while the face stays in frame. All detection runs client-side in the browser — no video or image data ever leaves the user's machine.*]
 
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[https://drive.google.com/drive/folders/1OVDLa27gHLUJOz8ypZWr2E7kA_cgOx_O?usp=drive_link]
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Athul krishna A]: [idea,ui]
+- [Rithuraj P V]: [laptop,idea]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
