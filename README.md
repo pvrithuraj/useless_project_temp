@@ -10,7 +10,7 @@
 
 
 ### Team Members
-- Team Lead: [Rithuraj P V] - [College of engneering trikaripur]
+- Team Lead:[[Rithuraj P V]] - [College of engneering trikaripur]
 - Member 2: [Athul krishana A ] - [College of engneering trikaripur]
 
 ### Project Description
