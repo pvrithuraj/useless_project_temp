@@ -10,8 +10,8 @@
 
 
 ### Team Members
-- Team Lead:[[Rithuraj P V]] - [College of engneering trikaripur]
-- Member 2: [Athul krishana A ] - [College of engneering trikaripur]
+- Team Lead:Rithuraj P V - College of engneering trikaripur
+- Member 2: Athul krishana A  - College of engneering trikaripur
 
 ### Project Description
 its just a website were you click a button and a character from a game honkai star rail spin around with a funny scream.and also it has a webcam mode which roasts you for just existing
